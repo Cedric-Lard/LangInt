@@ -1,15 +1,21 @@
 from enum import Enum
 
 class Token(Enum):
-    tok_eof = -1 
+    TOK_EOF = -1 
 
     # commands
-    tok_def = -2
-    tok_ectern = -3
+    TOK_DEF = -2
+    TOK_EXTERN = -3
 
     # primary
-    tok_identifier = -4
-    tok_number = -5
+    TOK_CHAR = -4
+    TOK_NUMBER = -5
+    L_PAREN = -6
+    R_PAREN = -7
+    L_BRACKET = -8
+    R_BRACKET = -9
+
+
 
 # Variables to store identifier string and number value
 identifier_str = ''
