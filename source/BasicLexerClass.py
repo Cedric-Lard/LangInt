@@ -1,10 +1,15 @@
+import Scanner
+import readchar
+
 def gettok():
-    last_char = ' '  
+    last_char = ' '
+    char = ' '  
+    while len(Scanner.sourceF) in Scanner.sourceF:
+        char = Scanner.sourceF
+        print(char)
 
     while last_char.isspace():
-        last_char = input("Enter a character: ")  
-        if last_char == '':  
-            return Token.tok_eof 
-        last_char = last_char[0]  
+        if last_char == '': 
+            return last_char        
 
-    return last_char
+gettok()
